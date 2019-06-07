@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/container_layout_margin"
+        android:background="@drawable/login_bg"
+        >
+
+
+        <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/avatar"
+            android:scaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            fresco:progressBarAutoRotateInterval="1000"
+            fresco:progressBarImage="@mipmap/loading_big"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/placeholder_disk_300"
+            fresco:placeholderImageScaleType="centerCrop" />
+
+
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_below="@+id/avatar"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TitleStyle"
+            android:textSize="24sp"
+            android:text="@string/default_username"
+            />
+
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/item1"-->
+    <!--android:layout_below="@+id/top_bac"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:background="@drawable/item_background"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/icn_skin"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:src="@mipmap/topmenu_icn_skin" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_toRightOf="@+id/icn_skin"-->
+    <!--android:text="主题换肤"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:text="官方红"-->
+    <!--android:textColor="#C0C0C0"-->
+    <!--android:textSize="10sp" />-->
+    <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:layout_below="@+id/item1"-->
+    <!--android:id="@+id/timing_play"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:background="@drawable/item_background"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:src="@mipmap/topmenu_icn_time" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="定时停止播放"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="15sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_below="@+id/timing_play"-->
+    <!--android:id="@+id/down_bit"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:background="@drawable/item_background"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+    <!--<ImageView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:src="@mipmap/topmenu_icn_cloud" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="下载歌曲品质"-->
+    <!--android:textColor="@android:color/black"/>-->
+    <!--</LinearLayout>-->
+    <!--<RelativeLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp">-->
+    <!--<TextView-->
+    <!--android:id="@+id/action_exit"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:textSize="16sp"-->
+    <!--android:text="退出应用"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

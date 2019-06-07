@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/app_bg">
+
+	<ImageView
+		android:layout_centerHorizontal="true"
+		android:layout_width="180dp"
+		android:layout_height="180dp"
+		android:src="@drawable/logo1"
+		/>
+
+
+	<TextView
+		style="@style/TitleStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:fontFamily="@font/sf_pro_display_light"
+		android:lineSpacingExtra="10dp"
+		android:text="@string/introduction"
+		android:textAlignment="center" />
+
+	<RelativeLayout
+		android:id="@+id/container_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="@dimen/container_layout_margin"
+		>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true">
+
+			<Button
+                android:id="@+id/btn_signup"
+				style="@style/StrokeButtonStyle"
+                android:layout_width="match_parent"
+				android:onClick="signup"
+				android:text="@string/get_started_btn_label"
+				android:layout_margin="@dimen/btn_login_margin"
+				android:textSize="14sp" />
+
+			<Button
+				android:layout_below="@+id/btn_signup"
+				android:layout_margin="@dimen/btn_login_margin"
+				android:id="@+id/btn_login"
+				style="@style/SolidButtonStyle"
+				android:layout_alignParentEnd="true"
+				android:layout_width="match_parent"
+				android:onClick="login"
+				android:text="@string/login_btn_label"
+				android:textSize="14sp"
+				android:layout_alignParentRight="true" />
+		</RelativeLayout>
+
+
+
+	</RelativeLayout>
+
+</RelativeLayout >
